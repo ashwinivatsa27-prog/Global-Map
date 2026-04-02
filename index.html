@@ -6,7 +6,11 @@
   <title>World Map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
+  <!-- ✅ Leaflet CSS MUST be inside a <link> tag -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
 
   <style>
     body {
@@ -24,7 +28,8 @@
 
   <div id="map"></div>
 
-  https://unpkg.com/leaflet@1.9.4/dist/leaflet.jsscript>
+  <!-- ✅ Leaflet JS MUST be inside a <script src=""> tag -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <script>
     const map = L.map("map").setView([20, 0], 2);
@@ -40,3 +45,4 @@
 
 </body>
 </html>
+
